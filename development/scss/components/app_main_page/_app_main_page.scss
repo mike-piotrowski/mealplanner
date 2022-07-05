@@ -1,0 +1,77 @@
+@import "./development/scss/utils/_fonts.scss";
+
+/* === Common === */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.25rem;
+  background-color: $header-color;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+  /* === LOGO === */
+
+  .header__logo {
+    font-family: $ff-logo;
+    font-size: 3rem;
+
+    a {
+      &:first-child {
+        font-weight: 100;
+        color: white;
+
+        span {
+          color: #e58a20;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  /* === USER === */
+
+  .header__user {
+    display: flex;
+
+    .header__user__name {
+      font-size: 1.5rem;
+      font-family: $ff-primary;
+      color: $bg-main-color;
+      line-height: 87px;
+    }
+
+    .fa-circle-user {
+      padding: 20px;
+      color: $button-color;
+      line-height: 50px;
+    }
+  }
+}
+
+  .app__nav__container{
+    background-color: $sidebar-color;
+    width: 150px;
+    height: 100vh;
+
+    .app__nav__list{
+    }
+
+    .app__list{
+      font-family: $ff-primary;
+      font-size: $fs-basic;
+      color: $bg-main-color;
+      font-weight: bold;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 10px;
+
+    }
+  }
+
+
+

@@ -1,0 +1,30 @@
+.call__action{
+  background-color: $header-color;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .call__action--description{
+    font: $ff-primary;
+    color: white;
+    width: 70%;
+    .description__header{
+      font-size: 2.25rem;
+    }
+    .description__content{
+      font-size: 1.5rem;
+    }
+  }
+  .call__action--button{
+    background-color: $button-color;
+    padding: 1.25rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    font: $ff-primary;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    width: 9.375rem;
+  }
+}

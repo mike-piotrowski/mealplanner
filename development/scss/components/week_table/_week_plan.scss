@@ -1,0 +1,65 @@
+
+.week__plan{
+  width: 69rem;
+  height: 24rem;
+  background-color: white;
+  margin-left: 26.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem 0 3rem;
+  border: 0.5px dashed $success-color;
+  table {
+    caption {
+      color: $warning-color;
+      font-size: 1.6rem;
+      padding-top: 1rem;
+      padding-bottom: 0.25rem;
+      font-weight: 700;
+      border-bottom: 1px solid lightgrey;
+      width: 100%;
+    }
+    tr{
+      th{
+        font-family: $ff-primary;
+        padding: 0.25rem 0 0.25rem 0;
+        font-size: 1.5rem;
+        color: black;
+        line-height: 1.5rem;
+        border-bottom: 1px solid lightgrey;
+        font-weight: bold;
+      }
+      td{
+        color: lightgrey;
+        padding: 0.25rem 0 0.25rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        border-bottom: 1px solid lightgrey;
+      }
+    }
+  }
+  .buttons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    .prev__button{
+      border-style: none;
+      background-color: white;
+      color: $warning-color;
+      i{
+        margin-right: 5px;
+      }
+    }
+    .next__button{
+      border-style: none;
+      background-color: white;
+      color: $warning-color;
+      i{
+        margin-left: 5px;
+      }
+    }
+
+  }
+}

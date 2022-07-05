@@ -1,0 +1,33 @@
+.author__container{
+  background-color: #ebebeb;
+  width: 100%;
+}
+
+.article {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img {
+  padding: 3.125rem;
+  object-fit: cover;
+
+}
+
+.article__title {
+  padding-top: 3.125rem;
+  width: 31.25rem;
+  font-family: $ff-primary;
+
+  h3 {
+    font-size: 2em;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.article__description {
+  font-family: $ff-primary;
+  font-size: 1.2rem;
+  justify-content: center;
+  line-height: normal;
+}

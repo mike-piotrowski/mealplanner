@@ -1,0 +1,47 @@
+.welcome {
+  display: flex;
+  background-color: $bg-main-color;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 2rem;
+  border: 1px dashed $text-lighter-color;
+  padding: 2rem;
+  padding-bottom: 30vh;
+  margin-left: 21rem;
+  text-align: center;
+  gap: 1.3rem;
+  height: 100%;
+
+  .welcome__header {
+    font-size: 2.25rem;
+    color: $sidebar-color;
+  }
+  span {
+    color: $sidebar-color;
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .welcome__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    .welcome__input {
+      border: 1px solid $text-lighter-color;
+      outline: none;
+      padding: 0.5rem 1rem;
+      width: 15rem;
+    }
+
+    .btn {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: $button-color;
+      padding: 0.7rem 2rem;
+      border: none;
+    }
+  }
+}

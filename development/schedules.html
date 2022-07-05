@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body class="background">
+    <header class="header">
+        <div class="header__logo">
+            <a href="#">
+                <h1>Zaplanuj <span>Jedzonko</span></h1>
+            </a>
+        </div>
+        <div class="user__header">
+            <p id="user__name">Imię</p>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+    <section>
+        <div class="left__sidebar">
+            <ul>
+                <li><a href="app.html">Pulpit</a></li>
+                <li><a href="recipes.html">Przepisy</a></li>
+                <li><a href="schedules.html">Plany</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="schedule__list-container">
+        <div class="schedule__list">
+            <div class="schedule__list-head">
+                <h2>LISTA PLANÓW</h2>
+                <i class="fas fa-plus-square schedule__button"></i>
+            </div>
+            <div class="schedule__list-table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAZWA</th>
+                        <th>OPIS</th>
+                        <th>TYDZIEŃ</th>
+                        <th>AKCJE</th>
+                    </tr>
+                    </thead>
+                    <tbody class="schedule__table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="edit__schedule-container hide">
+        <div class="new__schedule-title">
+            <h3>EDYTUJ PLAN</h3>
+            <a href="#">Zapisz i zamknij</a>
+        </div>
+        <div class="new__schedule-name">
+            <h2>Nazwa planu</h2>
+            <input type="text" placeholder="Podaj nazwę planu">
+        </div>
+        <div class="new__schedule-description">
+            <h2>Opis planu</h2>
+            <textarea placeholder="Podaj opis planu" rows="5"></textarea>
+        </div>
+        <div class="new__schedule-number">
+            <h2>Numer tygodnia</h2>
+            <input type="number" placeholder="0" min="1" value="1"/>
+        </div>
+        <table class="new__schedules">
+            <tr class="meal__titles">
+                <th></th>
+                <th>ŚNIADANIE</th>
+                <th>DRUGIE ŚNIADANIE</th>
+                <th>ZUPA</th>
+                <th>DRUGIE DANIE</th>
+                <th>KOLACJA</th>
+            </tr>
+            <tr class="monday day">
+                <td>PONIEDZIALEK</td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+            </tr>
+            <tr class="tuesday day">
+                <td>WTOREK</td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+            </tr>
+            <tr class="wednesday day">
+                <td>ŚRODA</td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+            </tr>
+            <tr class="thursday day">
+                <td>CZWARTEK</td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+            </tr>
+            <tr class="friday day">
+                <td>PIĄTEK</td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+            </tr>
+            <tr class="saturday day">
+                <td>SOBOTA</td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+            </tr>
+            <tr class="sunday day">
+                <td>NIEDZIELA</td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+                <td>
+                    <select class="meal"></select>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <script src="./js/schedule.js"></script>
+</body>
+
+</html>

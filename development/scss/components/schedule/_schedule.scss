@@ -1,0 +1,145 @@
+.edit__schedule-container,
+.new__schedule-container{
+  width: 81.25rem;
+  margin-top: 3rem;
+  margin-left: 26rem;
+  background-color: white;
+  padding-bottom: 0.75rem;
+  border: 1px dashed $header-color;
+  .new__schedule-title{
+    padding: 0.25rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    border-bottom: 1px solid lightgray;
+    h3{
+      font-family: $ff-primary;
+      font-size: 2rem;
+      color: $warning-color
+    }
+    a{
+      padding: 0.5rem 0.5rem;
+      background-color: $warning-color;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+  }
+  .new__schedule-name{
+    display: flex;
+    margin: 0.3rem 2rem;
+    padding-bottom: 1rem;
+    padding-right: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+      font-family: $ff-primary;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $text-lighter-color;
+    }
+    input{
+      border: 0.5px solid lightgray;
+      font-size: 1.2rem;
+      width: 80%;
+      height: 2rem;
+      color: $text-lighter-color;
+      padding: 0.25rem;
+    }
+  }
+  .new__schedule-description{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 2rem;
+    padding-bottom: 1rem;
+    padding-right: 4rem;
+    color: $text-lighter-color;
+    h2{
+      font-family: $ff-primary;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $text-lighter-color;
+    }
+    textarea{
+      border: 0.5px solid lightgray;
+      width: 80%;
+      color: $text-lighter-color;
+      padding: 0.25rem;
+      font-size: 1.2rem;
+      resize: none;
+      font-family: $ff-primary;
+    }
+  }
+  .new__schedule-number{
+    display: flex;
+    margin: 0.3rem 2rem;
+    padding-bottom: 1rem;
+    color: $text-lighter-color;
+    align-items: center;
+    h2{
+      font-family: $ff-primary;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $text-lighter-color;
+    }
+    input{
+      border: 0.5px solid lightgray;
+      font-size: 1.2rem;
+      margin-left: 3.5rem;
+      width: 5%;
+      height: 2rem;
+      color: $text-lighter-color;
+      padding: 0.25rem;
+    }
+  }
+  .new__schedules{
+    text-align: left;
+    margin: 1rem 3rem 1rem 1rem;
+    table-layout: fixed;
+    width: 97%;
+    border-collapse: collapse;
+    padding-bottom: 10rem;
+    .meal__titles{
+      font-size: 2rem;
+      color: $header-color;
+      font-weight: 700;
+      th:not(:first-of-type){
+        padding: 1rem;
+        border-top: 0.5px solid lightgray ;
+      }
+    }
+    .day{
+      text-align: center;
+      td:first-of-type{
+        font-size: 1.5rem;
+        color: $header-color;
+        font-weight: 700;
+        padding: 0.5rem 0.3rem 0.3rem 1rem;
+        border-top: 0.5px solid lightgray ;
+        text-align: center;
+      }
+      td{
+        width: calc(100% / 6);
+        padding: 0.3rem;
+        border-top: 0.5px solid lightgray ;
+        select{
+          display: block;
+          height: 2rem;
+          font-size: 1rem;
+          padding: 0.2rem 1.4rem 0.2rem 0.8rem;
+          width: 15rem;
+          max-width: 100%;
+          border: 0.5px solid lightgray;
+          background-color: white;
+          border-radius: 8px;
+
+        }
+      }
+    }
+    .sunday{
+      td{
+        border-bottom: 0.5px solid lightgray;
+      }
+    }
+  }
+}

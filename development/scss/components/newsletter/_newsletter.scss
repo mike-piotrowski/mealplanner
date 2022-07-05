@@ -1,0 +1,28 @@
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $sidebar-color;
+  height: 10rem;
+  width: 100%;
+  color: #fff;
+  &__header {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .newsletter__form {
+    display: flex;
+  }
+
+  &__mail,
+  .btn {
+    padding: 0 1rem;
+    border: none;
+    height: 2rem;
+  }
+  .btn {
+    color: #fff;
+    background-color: $button-color;
+  }
+}

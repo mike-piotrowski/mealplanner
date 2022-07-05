@@ -1,0 +1,113 @@
+/* === Common === */
+
+.newrecipe {
+  border: 1px dashed $text-lighter-color;
+  background-color: $bg-main-color;
+  margin: 1.5rem 2rem;
+  margin-left: 21rem;
+  padding: 2rem 2.5rem;
+  color: $sidebar-color;
+
+  /* === Header === */
+
+  .newrecipe__header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 2px solid $text-lighter-color;
+    padding-bottom: 0.4rem;
+
+    &--title {
+      font-size: 1.5rem;
+      color: $button-color;
+    }
+  }
+
+  .newrecipe__name,
+  .newrecipe__description {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    padding-right: 6rem;
+    white-space: nowrap;
+    font-weight: 300;
+  }
+
+  .newrecipe__description--input,
+  .newrecipe__name--input {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-left: 1rem;
+    color: $sidebar-color;
+  }
+
+  .newrecipe__description--input {
+    margin-left: 2.5rem;
+  }
+}
+
+/* === Main section === */
+
+.newrecipe__main {
+  display: flex;
+  overflow: hidden;
+  gap: 3rem;
+  max-height: 50vh;
+
+  .newrecipe__instructions,
+  .newrecipe__ingredients {
+    width: 50%;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    h4 {
+      border-bottom: 2px solid $text-lighter-color;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    .input {
+      padding: 0.4rem;
+      width: 80%;
+      font-size: $fs-basic;
+      margin-left: 1rem;
+    }
+  }
+
+  .newrecipe__plus {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: $success-color;
+  }
+
+  .newrecipe__form--main {
+    white-space: nowrap;
+  }
+
+  ul,
+  ol {
+    margin-top: 2rem;
+    font-size: 1rem;
+    max-height: 50%;
+    overflow: auto;
+    line-height: 1.4rem;
+    padding-left: 2rem;
+    width: 80%;
+    list-style-type: decimal;
+
+
+    .pen {
+      color: $warning-color;
+      margin-left: 0.3rem;
+    }
+
+    .trash {
+      color: $trash-icon-color;
+      margin-left: 0.1rem;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+}

@@ -1,0 +1,46 @@
+.article__columns__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+  background-color: $background-color;
+  width: 100%;
+  margin: 0 auto;
+   article{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 30%;
+   }
+
+  .article__columns__title {
+    text-align: center;
+    width: 80%;
+    font-size: 2rem;
+    padding-bottom: 0.625rem;
+  }
+
+
+
+.icon {
+    text-align: center;
+    padding-bottom: 0.3125rem;
+    color: $text-lighter-color;
+  font-size: 2rem;
+  }
+
+
+
+  .article__columns__description {
+    width: 18.75rem;
+    text-align: center;
+    font-size:  1.2rem;
+  }
+
+  .article__columns__title,
+  .article__columns__description {
+    color: $text-lighter-color;
+    font-family: Arial, sans-serif;
+  }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <!-- /* === Header === */ -->
+
+  <body>
+    <header class="header">
+      <div class="header container">
+        <h1 class="header__logo">
+          <a href="#">Zaplanuj <span>Jedzonko</span></a>
+        </h1>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="app.html">ZAPLANUJ POSIŁKI!</a></li>
+            <li><a href="#whyUs?">DLACZEGO WARTO?</a></li>
+            <li><a href="#aboutMe">O MNIE</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- /* === Carousel === */ -->
+
+      <section class="carousel">
+        <div class="carousel">
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img
+                  class="carousel__images"
+                  src="Images/first_photo.jpg"
+                  alt="pancake with avocado and egg"
+                />
+                <h1>First slide label</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__images" src="Images/second_photo.jpg" alt="pizza" />
+                <h1>Second slide label</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__images" src="Images/third_photo.jpg" alt="spices" />
+                <h1>Third slide label</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--left">
+            <img src="Images/left_arrow.svg" alt="left arrow" />
+          </button>
+          <button class="carousel__button carousel__button--right">
+            <img src="Images/right_arrow.svg" alt="right arrow" />
+          </button>
+          <div class="carousel__nav">
+            <button class="carousel__indicator carousel__indicator--current"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- /* === Carousel === */ -->
+
+      <section class="call__action">
+        <div class="call__action container">
+          <div class="call__action--description">
+            <h3 class="description__header">Lorem ipsum dolor sit amet</h3>
+            <p class="description__content">
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+          </div>
+          <a href="#" class="call__action--button">LOREM IPSUM</a>
+        </div>
+      </section>
+      <section>
+        <!-- features -->
+      </section>
+
+      <!-- /* === Tree articles === */ -->
+
+      <section class="article__columns__container" id="whyUs?">
+        <div class="container article__columns__container" >
+          <article>
+            <div class="icon">
+              <i class="fa-solid fa-check fa-2x"></i>
+            </div>
+            <div class="article__columns__title">
+              <h3>Lorem ipsum dolor sit amet</h3>
+            </div>
+            <p class="article__columns__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus ut ipsum eget
+              feugiat. Aenean at porta tellus. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+          <article>
+            <div class="icon">
+              <i class="fa-regular fa-clock fa-2x"></i>
+            </div>
+            <div class="article__columns__title article__columns__title__mid">
+              <h3>Lorem ipsum dolor sit amet</h3>
+            </div>
+            <p class="article__columns__description article__columns__description__mid">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus ut ipsum eget
+              feugiat. Aenean at porta tellus. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+          <article>
+            <div class="icon">
+              <i class="fa-solid fa-list fa-2x"></i>
+            </div>
+            <div class="article__columns__title">
+              <h3>Lorem ipsum dolor sit amet</h3>
+            </div>
+            <p class="article__columns__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus ut ipsum eget
+              feugiat. Aenean at porta tellus. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- /* === Newsletter === */ -->
+
+    <section class="newsletter">
+      <div class="newsletter container">
+        <h3 class="newsletter__header">Zapisz się do naszego newslettera</h3>
+        <label class="newsletter__form">
+          <input type="email" class="newsletter__mail" id="newsletter" placeholder="Adres e-mail">
+          <button class="btn">ZAPISUJĘ SIĘ!</button>
+        </label>
+      </div>
+
+    </section>
+
+    <!-- /* === Author === */ -->
+
+    <section class="author__container" >
+      <article class="article container" id="aboutMe">
+        <div class="img">
+          <img src="Images/1640164290762.jpg" height="400px" width="400px"  />
+        </div>
+        <div class="article__title">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <div>
+            <p class="article__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  <!-- /* === Footer === */ -->
+
+  <footer>
+    <div class="call__footer" id="contact">
+      <article>
+        <div class="call__footer1">
+          <div class="call__name1">
+            <h>Lorem ipsum dolor</h>
+          </div>
+            <p class="articledescriptionfoot1">
+              Lorem Ipsum is simply dummy text 
+              of the printing and typesetting 
+              industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </article>
+      <article>
+        <div class="call__footer2">
+          <div class="call__name2">
+            <h>Lorem ipsum dolor</h>
+          </div>
+            <ul class="a">
+              <li>Lorem Ipsum is simply</li>
+              <li>dummy text of the</li>
+              <li>printing and typesetting</li>
+              <li>industry. Lorem Ipsum </li>
+            </ul>
+        </div>
+      </article>
+      <article>
+        <div class="call__footer3">
+          <div class="call__name3">
+            <h>Lorem ipsum dolor</h>
+          </div>
+          <label class="footer__form">
+            <input type="email" class="footer__mail" id="footer">
+            <button class="btn">Lorem</button>
+          </label>
+          <div class="socialmedia">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- copyright -->
+    <div class="copyright__container">
+      <small class="copyright">Copyright   <span>ZaplanujJedzonko.pl </span> </small>  
+    </div>
+  </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

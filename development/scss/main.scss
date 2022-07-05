@@ -1,0 +1,53 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+/* === Imports === */
+
+@import "./utils/colors";
+@import "./utils/fonts";
+@import "./core/reset";
+@import "./components/header/header";
+@import "./components/three__Columns/article.scss";
+@import "./development/scss/components/carousel/carousel.scss";
+@import "./components/about_author/author.scss";
+@import "./development/scss/components/call_to_action/call_to_action.scss";
+@import "./components/newsletter/newsletter";
+@import "./components/sidebar/sidebar.scss";
+@import "./development/scss/components/footer/footer.scss";
+@import "./development/scss/components/widgets/widgets.scss";
+@import "./development/scss/components/week_table/week_plan.scss";
+@import "./components/welcome/welcome";
+@import "./components/new_recipe/new_recipe";
+@import "./core/buttons";
+@import './development/scss/components/schedule/schedule.scss';
+@import "./core/inputs";
+@import './development/scss/components/schedule/schedule-list.scss';
+@import "./development/scss/components/list_of_recipes/list_of_recipes.scss";
+
+/* === Basic === */
+
+body {
+  font-family: $ff-primary;
+  font-size: $fs-basic;
+  background-color: $bg-main-color;
+}
+
+.background {
+  background-image: url("../Images/bg.png");
+  max-width: 100%;
+  font-family: $ff-primary;
+  overflow-x: hidden;
+}
+
+/* === Utility === */
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.hide {
+  display: none;
+}

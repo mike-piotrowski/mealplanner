@@ -1,0 +1,66 @@
+.widgets {
+  width:75rem;
+  margin-left: 26.2rem;
+  margin-top: 1.875rem;
+  display: flex;
+  gap: 1.5rem;
+
+
+  .widget__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $success-color;
+    width: 12rem;
+    height: 11.125rem;
+    background-color: white;
+    border: 0.5px dashed $success-color;
+
+    a {
+      text-align: center;
+      font-size: 5rem;
+      margin-bottom: 1.5rem;
+      border: $success-color;
+      color: $success-color;
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-align: center;
+
+    }
+  }
+  .widgets__notifications{
+    display: flex;
+    width: 48rem;
+    height: 3.125rem;
+    background-color: white;
+    margin-bottom: 0.75rem;
+    align-items: center;
+      &--blue{
+        color: $infos-color;
+        border: 0.5px dashed $infos-color;
+      }
+      &--yellow{
+        color: $warning-color;
+        border: 0.5px dashed $warning-color;
+      }
+      &--green{
+        color: $success-color;
+        border: 0.5px dashed $success-color;
+      }
+    p{
+      font-size: 1.25rem;
+      i{
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+    i{
+      margin-left: auto;
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
